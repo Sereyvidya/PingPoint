@@ -66,7 +66,7 @@
 @media (min-width: 550px) {
   .header-height {
     height: 307px;
-    background: url('./desktopBg.png') no-repeat center center;
+    background: url('/desktopBg.png') no-repeat center center;
     background-size: cover;
   }
   .map-top {
@@ -100,7 +100,7 @@
 @media (min-width: 1000px) {
   .header-height {
     height: 250px;
-    background: url('./desktopBg.png') no-repeat center center;
+    background: url('/desktopBg.png') no-repeat center center;
     background-size: cover;
   }
   .map-top {
