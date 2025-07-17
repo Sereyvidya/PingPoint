@@ -16,7 +16,7 @@ const Header = ({ ipAddress, setIPAddress, setInfo }) => {
   };
 
   return (
-    <div className="header-height flex w-full flex-col items-center gap-7 bg-[url('./desktopBg.png')] pt-7">
+    <div className="header-height flex w-full flex-col items-center gap-7 pt-7">
       <h1 className="text-2xl font-medium text-white">IP Address Tracker</h1>
 
       <div className="flex h-12 w-[90%] justify-center">
