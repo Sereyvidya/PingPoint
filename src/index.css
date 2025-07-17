@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+
+@theme {
+  --font-display: "Rubik", "sans-serif";
+  --color-gray-950: hsl(0, 0%, 17%);
+  --color-gray-400: hsl(0, 0%, 58%);
+}
+
+@layer base {
+  /* font */
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.search-layout {
+  width: 90%;
+}
+
+@media (min-width: 440px) {
+  .search-layout {
+    width: 440px;
+  }
+}
+
+.header-height {
+  height: 340px;
+  background: url('./mobileBg.png') no-repeat center center;
+  background-size: cover;
+}
+
+.location-style {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.card {
+  align-items: center;
+}
+
+.card-2 {
+  align-items: center;
+}
+
+.map-top {
+  top: 340px;
+  position: absolute;
+  height: calc(100vh - 340px);
+  width: 100%;
+  z-index: 0;
+}
+
+@media (min-width: 550px) {
+  .header-height {
+    height: 307px;
+    background: url('./desktopBg.png') no-repeat center center;
+    background-size: cover;
+  }
+  .map-top {
+    top: 307px;
+    position: absolute;
+    height: calc(100vh - 307px);
+    width: 100%;
+    z-index: 0;
+  }
+  .location-style {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .card-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: 100px;
+    border-right: 1px solid #d1d5db;
+    margin-right: 0.75rem;
+    align-items: stretch;
+  }
+  .card-2 {
+    height: 100px;
+    margin-right: 0.75rem;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-height {
+    height: 250px;
+    background: url('./desktopBg.png') no-repeat center center;
+    background-size: cover;
+  }
+  .map-top {
+    top: 250px;
+    position: absolute;
+    height: calc(100vh - 250px);
+    width: 100%;
+    z-index: 0;
+  }
+  .card-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card-2 {
+    height: 100px;
+    border-right: 1px solid #d1d5db;
+    margin-right: 0.75rem;
+    align-items: stretch;
+  }
+}
