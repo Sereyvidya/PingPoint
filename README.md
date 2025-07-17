@@ -1,10 +1,10 @@
-# PingPoint
+# 📍 PingPoint
 
 Find and display location information based on entered IP. Built with a clean UI and responsive layout using React, Vite, and Tailwind CSS.
 
 ## 🚀 Live Demo
 
-Check it out here: _Not available yet_
+Check it out here: [https://ping-point.vercel.app/](https://ping-point.vercel.app/)
 
 ## ✨ Features
 
