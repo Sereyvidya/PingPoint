@@ -32,7 +32,7 @@
 
 .header-height {
   height: 340px;
-  background: url('./mobileBg.png') no-repeat center center;
+  background: url('/mobileBg.png') no-repeat center center;
   background-size: cover;
 }
 
